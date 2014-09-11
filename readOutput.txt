@@ -1,0 +1,1 @@
+u'{\r\n"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\\"http://www.w3.org/1999/xhtml\\"><p>Resource Id \\"Patient/84239292\\" does not exist</p></div>"},"issue" : [{"severity" : "error","details" : "Resource Id \\"Patient/84239292\\" does not exist"}]}'

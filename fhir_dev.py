@@ -11,7 +11,6 @@ rest = RestfulFHIR('http://fhir.healthintersections.com.au/open', 'json')
 #params = {'gender:text': 'F', 'identifier': 55567890}
 #params = {'subject._id': 55567890}
 
-
 params = {'identifier': 444888888}
 #params = {'given': 'Boris'}
 query = rest.search('Patient', params)
@@ -24,9 +23,6 @@ print '## End FHIR Search ####'
 f1=open('./searchOutput.txt', 'w+')
 print >>f1, repr(query.text)
 
-#f2=open('./searchOuptputF2.txt', 'w+')
-#t = u"%s", query.text
-#print >> f2, t
 print ''
 
 print '#### FHIR Read ####'
@@ -36,10 +32,15 @@ print '[Good] Query status: '
 print query
 print '[Good] Query response (query.text): '
 print query.text
+f2=open('./readOutput.txt', 'w+')
+print >>f2, repr(query.text)
 print ''
+
+#testing a bad request - Patient does NOT exist
 query = rest.read('Patient', 84239292999)
 print '[Bad] Query status: '
 print query
 print '[Bad] Query response (query.text): '
 print query.text
+
 print '## End FHIR Read ####'
