@@ -1,0 +1,5 @@
+fhir==0.0.4
+lxml==3.3.5
+pydicom==0.9.8
+requests==2.3.0
+wsgiref==0.1.2
