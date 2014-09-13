@@ -24,19 +24,3 @@ def FHIR_DICOM_Search():
 	print ''
 
 	print '## End FHIR-DICOM Search ####'
-
-
-
-# print '#### FHIR-DICOM Read http://fhir.dicomserver.co.uk/ ####'
-# rest = RestfulFHIR('http://fhir.dicomserver.co.uk/', 'xml')
-# params = {'gender': 'F'}
-# query = rest.search('Patient', params)
-# print 'Query status: %s' % query
-# # Parse the response Atom xml
-# d = feedparser.parse(query.text)
-# print len(d['entries'])
-# for post in d.entries:
-#     print post.title + " // " + post.id + "\n"
-
-# print >>open('./dcomQueryOutput.txt', 'w+'), repr(query.text)
-# print ''
