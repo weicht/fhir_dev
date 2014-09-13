@@ -1,46 +1,21 @@
 #from __future__ import print_function
 from fhir import *
+from lxml import objectify, etree
+import feedparser
+from fhir_search import *
+from fhir_read import *
+from bad_request import *
+from fhir_dicom_search import *
 
-# old .0.0.1 way
-# rest = RestfulFHIR('http://fhir.healthintersections.com.au/open','Patient','name=Jimmy')
 
-print '#### FHIR Search ####'
-rest = RestfulFHIR('http://fhir.healthintersections.com.au/open', 'json')
-#params = {'identifier': 55567890}
-#params = {'gender:text': 'male'}
-#params = {'gender:text': 'F', 'identifier': 55567890}
-#params = {'subject._id': 55567890}
+#Do a FHIR Search
+FHIR_Search()
 
-params = {'identifier': 444888888}
-#params = {'given': 'Boris'}
-query = rest.search('Patient', params)
-print 'Query status: %s' % query
+#Do a FHIR DICOM Read
+FHIR_Read()
 
-print 'Query response (query.text): '
-print query.text
-print '## End FHIR Search ####'
+#Operation Outcome set with 404 for a bad request
+FHIR_Bad_Request()
 
-f1=open('./searchOutput.txt', 'w+')
-print >>f1, repr(query.text)
-
-print ''
-
-print '#### FHIR Read ####'
-rest = RestfulFHIR('http://fhir.healthintersections.com.au/open', 'json')
-query = rest.read('Patient', 84239292)
-print '[Good] Query status: '
-print query
-print '[Good] Query response (query.text): '
-print query.text
-f2=open('./readOutput.txt', 'w+')
-print >>f2, repr(query.text)
-print ''
-
-#testing a bad request - Patient does NOT exist
-query = rest.read('Patient', 84239292999)
-print '[Bad] Query status: '
-print query
-print '[Bad] Query response (query.text): '
-print query.text
-
-print '## End FHIR Read ####'
+#Perform some Search/Read requsts agains the FHIR-DICOM server
+FHIR_DICOM_Search()
