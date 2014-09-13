@@ -13,10 +13,3 @@ def FHIR_Read():
 	# print '[Good] Query response (query.text): '
 	print query.text
 	print '## End FHIR Read ####'
-
-	# #testing a bad request - Patient does NOT exist
-	# query = rest.read('Patient', 84239292999)
-	# print '[Bad] Query status: '
-	# print query
-	# print '[Bad] Query response (query.text): '
-	# print query.text

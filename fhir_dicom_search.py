@@ -1,5 +1,4 @@
 from fhir import *
-#from lxml import objectify, etree
 import feedparser
 
 
