@@ -9,7 +9,7 @@ def FHIR_DICOM_Search():
 	# Look here for all the Params avail for Patient and ImagingStudy
 	#  - http://fhir.dicomserver.co.uk/
 	# Note: The server this is going against is Under Development
-	rest = RestfulFHIR('http://fhir.dicomserver.co.uk/', 'xml')
+	rest = RestfulFHIR('http://fhir.dicomserver.co.uk', 'xml')
 	params = {'gender': 'F'}
 	query = rest.search('Patient', params)
 	print 'Query status: %s' % query
@@ -19,7 +19,7 @@ def FHIR_DICOM_Search():
 	for post in d.entries:
 	    print post.title + " // " + post.id + "\n"
 
-	print >>open('./dcomQueryOutput.txt', 'w+'), repr(query.text)
+	print >>open(_FILE_PATH, 'w+'), repr(query.text)
 	print ''
 
 	print '## End FHIR-DICOM Search ####'
