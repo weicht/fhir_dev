@@ -4,5 +4,5 @@ include
 lib
 
 .DS_Store
-.pyc
+*.pyc
 
