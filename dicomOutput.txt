@@ -1,0 +1,124 @@
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY', 'HEADER_CORRECTED']
+(0008, 0016) SOP Class UID                       UI: Positron Emission Tomography Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.3.12.2.1107.5.1.4.36085.2.0.3752318310762345
+(0008, 0020) Study Date                          DA: '20040304'
+(0008, 0021) Series Date                         DA: '20040304'
+(0008, 0022) Acquisition Date                    DA: '20040304'
+(0008, 0023) Content Date                        DA: '20040304'
+(0008, 0030) Study Time                          TM: '122600.979000'
+(0008, 0031) Series Time                         TM: '122825.707000'
+(0008, 0032) Acquisition Time                    TM: '122825.707000'
+(0008, 0033) Content Time                        TM: '124718.000000'
+(0008, 0050) Accession Number                    SH: '1657271'
+(0008, 0060) Modality                            CS: 'PT'
+(0008, 0070) Manufacturer                        LO: 'CPS'
+(0008, 0080) Institution Name                    LO: 'UCLA PET/CT'
+(0008, 0090) Referring Physician's Name          PN: 'BLACKWELL KEITH E  M.D.'
+(0008, 1010) Station Name                        SH: 'petCT1-mp1'
+(0008, 1030) Study Description                   LO: 'Neck^1HEAD_NECK_PETCT'
+(0008, 103e) Series Description                  LO: 'PET WB'
+(0008, 1090) Manufacturer's Model Name           LO: '1023'
+(0008, 1110)  Referenced Study Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Detached Study Management SOP Class
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.2.840.113745.101000.1008000.38048.4626.5933732
+   ---------
+(0008, 1111)  Referenced Performed Procedure Step Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Study Component Management SOP Class
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.2.840.113745.101000.1008000.38048.4626.5933732
+   ---------
+(0008, 1120)  Referenced Patient Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Detached Patient Management SOP Class
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.2.840.113745.101000.1008000.37317.4904.3609243
+   ---------
+(0010, 0010) Patient's Name                      PN: 'COMUNIX'
+(0010, 0020) Patient ID                          LO: 'fYET5.0'
+(0010, 0030) Patient's Birth Date                DA: '19410901'
+(0010, 1010) Patient's Age                       AS: '062Y'
+(0010, 1030) Patient's Weight                    DS: '0'
+(0018, 0050) Slice Thickness                     DS: '3.3750001'
+(0018, 1000) Device Serial Number                LO: '10'
+(0018, 1181) Collimator Type                     CS: 'NONE'
+(0018, 1200) Date of Last Calibration            DA: ['20030802', '20040206']
+(0018, 1201) Time of Last Calibration            TM: ['234421.000000', '185050.000000']
+(0018, 1242) Actual Frame Duration               IS: '420000'
+(0018, 5100) Patient Position                    CS: 'HFS'
+(0020, 000d) Study Instance UID                  UI: 1.2.840.113745.101000.1008000.38048.4626.5933732
+(0020, 000e) Series Instance UID                 UI: 1.3.12.2.1107.5.1.4.36085.2.0.3752006615092156
+(0020, 0010) Study ID                            SH: '3964225'
+(0020, 0011) Series Number                       IS: '604'
+(0020, 0012) Acquisition Number                  IS: '2'
+(0020, 0013) Instance Number                     IS: '82'
+(0020, 0032) Image Position (Patient)            DS: ['-134.74816', '-272.14441', '-790.389']
+(0020, 0037) Image Orientation (Patient)         DS: ['1', '0', '0', '0', '1', '0']
+(0020, 0052) Frame of Reference UID              UI: 1.3.12.2.1107.5.1.4.36085.2.0.375200242560131
+(0020, 1041) Slice Location                      DS: '-790.389'
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0010) Rows                                US: 128
+(0028, 0011) Columns                             US: 128
+(0028, 0030) Pixel Spacing                       DS: ['2.0593637', '2.0593637']
+(0028, 0051) Corrected Image                     CS: ['RAN', 'DTIM', 'NORM', 'ATTN', 'SCAT', 'DECY']
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 0
+(0028, 1050) Window Center                       DS: '5939'
+(0028, 1051) Window Width                        DS: '10690'
+(0028, 1052) Rescale Intercept                   DS: '0'
+(0028, 1053) Rescale Slope                       DS: '0.67012244'
+(0028, 1054) Rescale Type                        LO: 'BQML'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0028, 2112) Lossy Image Compression Ratio       DS: '2.515970'
+(0032, 1032) Requesting Physician                PN: 'BLACKWELL^KEITH^E^^M.D.'
+(0032, 1060) Requested Procedure Description     LO: 'PCT PET HEAD & NECK'
+(0032, 1064)  Requested Procedure Code Sequence   1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'CPTHN'
+   (0008, 0102) Coding Scheme Designator            SH: 'LOCAL'
+   (0008, 0104) Code Meaning                        LO: 'PCT PET HEAD & NECK'
+   ---------
+(0040, 0244) Performed Procedure Step Start Date DA: '20040304'
+(0040, 0245) Performed Procedure Step Start Time TM: '122600.979000'
+(0040, 0254) Performed Procedure Step Descriptio LO: 'Neck^1HEAD_NECK_PETCT'
+(0054, 0013)  Energy Window Range Sequence   1 item(s) ---- 
+   (0054, 0014) Energy Window Lower Limit           DS: '350'
+   (0054, 0015) Energy Window Upper Limit           DS: '650'
+   ---------
+(0054, 0016)  Radiopharmaceutical Information Sequence   1 item(s) ---- 
+   (0018, 1072) Radiopharmaceutical Start Time      TM: '102757.000000'
+   (0018, 1074) Radionuclide Total Dose             DS: '4.2661001e+009'
+   (0018, 1075) Radionuclide Half Life              DS: '6586.2'
+   (0018, 1076) Radionuclide Positron Fraction      DS: '0.97'
+   (0054, 0300)  Radionuclide Code Sequence   0 item(s) ---- 
+   ---------
+(0054, 0081) Number of Slices                    US: 83
+(0054, 0410)  Patient Orientation Code Sequence   1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'F-10450'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'recumbent'
+   (0054, 0412)  Patient Orientation Modifier Code Sequence   1 item(s) ---- 
+      (0008, 0100) Code Value                          SH: 'F-10340'
+      (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+      (0008, 0104) Code Meaning                        LO: 'supine'
+      ---------
+   ---------
+(0054, 0414)  Patient Gantry Relationship Code Sequence   1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'F-10470'
+   (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+   (0008, 0104) Code Meaning                        LO: 'headfirst'
+   ---------
+(0054, 1000) Series Type                         CS: ['WHOLE BODY', 'IMAGE']
+(0054, 1001) Units                               CS: 'BQML'
+(0054, 1002) Counts Source                       CS: 'EMISSION'
+(0054, 1100) Randoms Correction Method           CS: 'DLYD'
+(0054, 1101) Attenuation Correction Method       LO: 'CT-derived mu-map'
+(0054, 1102) Decay Correction                    CS: 'START'
+(0054, 1103) Reconstruction Method               LO: 'OSEM 2i8s'
+(0054, 1105) Scatter Correction Method           LO: 'Model-based'
+(0054, 1200) Axial Acceptance                    DS: '17'
+(0054, 1201) Axial Mash                          IS: ['3', '4']
+(0054, 1300) Frame Reference Time                DS: '0'
+(0054, 1321) Decay Factor                        DS: '1.0222637'
+(0054, 1322) Dose Calibration Factor             DS: '1569705.1'
+(0054, 1330) Image Index                         US: 82
+(7fe0, 0010) Pixel Data                          OW: Array of 13044 bytes
