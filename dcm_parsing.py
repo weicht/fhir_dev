@@ -13,8 +13,8 @@ def DCM_Parsing():
 	#  http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/DICOM.html
 	print "Patient.Name: %s " % ds.PatientName
 	print ds
-	im = Image.fromarray(ds.pixel_array)
-	im.show()
+#	im = Image.fromarray(ds.pixel_array)
+#	im.show()
 
 	print >>open(_FILE_PATH, 'w+'), ds
 	print '## End DCM File Parsing ####'

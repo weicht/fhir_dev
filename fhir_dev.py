@@ -11,23 +11,23 @@ from dcm_parsing import *
 from orthanc_rest import *
 
 
-# #Do a FHIR Search
-# FHIR_Search()
+#Do a FHIR Search
+FHIR_Search()
 
-# #Do a FHIR DICOM Read
-# FHIR_Read()
+#Do a FHIR DICOM Read
+FHIR_Read()
 
-# #Operation Outcome set with 404 for a bad request
-# FHIR_Bad_Request()
+#Operation Outcome set with 404 for a bad request
+FHIR_Bad_Request()
 
-# #Perform some Search/Read requsts agains the FHIR-DICOM server
-# FHIR_DICOM_Search()
+#Perform some Search/Read requsts agains the FHIR-DICOM server
+FHIR_DICOM_Search()
 
-# #Perform a query against the SMART on FHIR server for ImagingStudy data
-# SMART_On_FHIR_Search()
+#Perform a query against the SMART on FHIR server for ImagingStudy data
+SMART_On_FHIR_Search()
 
-# #Parse a DCM file with pydicom
-# DCM_Parsing()
+#Parse a DCM file with pydicom
+DCM_Parsing()
 
-# Perform REST based requests against the Orthanc server using it's custom REST API
+#Perform REST based requests against the Orthanc server using it's custom REST API
 Orthanc_Request()
