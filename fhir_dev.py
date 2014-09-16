@@ -8,6 +8,7 @@ from bad_request import *
 from fhir_dicom_search import *
 from smart_on_fhir_search import *
 from dcm_parsing import *
+from orthanc_rest import *
 
 
 # #Do a FHIR Search
@@ -25,5 +26,8 @@ from dcm_parsing import *
 # #Perform a query against the SMART on FHIR server for ImagingStudy data
 # SMART_On_FHIR_Search()
 
-#Parse a DCM file with pydicom
-DCM_Parsing()
+# #Parse a DCM file with pydicom
+# DCM_Parsing()
+
+# Perform REST based requests against the Orthanc server using it's custom REST API
+Orthanc_Request()
