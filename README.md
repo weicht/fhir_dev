@@ -1,6 +1,6 @@
 Purpose:
 To test some FHIR REST APIs, explore DICOM Server capabilities, and tinker with Python.
-Look at ./FHIR-DICOM.png to see the setup.
+Look at FHIR-DICOM.png to see the setup.
 
 Status:
 Very rough at the moment.  Mainly established connections with external systems by performing
